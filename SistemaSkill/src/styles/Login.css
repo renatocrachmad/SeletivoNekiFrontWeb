@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1edea;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 110px auto 0 auto;
+  padding: 1em;
+  border: 1px solid #D2691E;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.login-container input[type="text"],
+.password-container input {  
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #d6cfcc;
+  
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  
+}
+
+.password-container input {
+  padding-right: 30px;
+  background-color: #d6cfcc;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: #FF8C00;   
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #696969; /* Cor de fundo ao passar o mouse */
+}
+
+#root {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 1px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #b48e73, #de6209);
+}
+
+footer .social-links {
+  margin: 5px 0;
+}
+
+footer .social-links a {
+  margin: 0 25px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para telas menores que 600px */
+@media (max-width: 600px) {
+  .login-container {
+    max-width: 100%;
+    padding: 0.5em;
+  }
+
+  .password-container {
+    flex-direction: column;
+  }
+
+  .password-container input {
+    padding-right: 30px;
+  }
+
+  .eye-icon {
+    right: 10px;
+    margin-top: 10px;
+  }
+
+  .remember-me {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .social-links {
+    flex-direction: column;
+  }
+
+  footer .social-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}

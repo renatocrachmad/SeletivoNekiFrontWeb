@@ -1,0 +1,67 @@
+
+.home-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #D2691E;
+    margin: 110px auto 0 auto;
+    
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .skill-item div {
+    flex-grow: 1;
+  }
+  
+  .skill-item input {
+    width: 60px;
+  }
+  
+  .skill-item button {
+    margin-left: 10px;
+  }
+  
+  /* Estilos para telas menores que 600px */
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 0.5em;
+    }
+  
+    .skill-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .skill-item img {
+      margin-bottom: 10px;
+    }
+  
+    .skill-item div {
+      width: 100%;
+    }
+  
+    .skill-item input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .skill-item button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

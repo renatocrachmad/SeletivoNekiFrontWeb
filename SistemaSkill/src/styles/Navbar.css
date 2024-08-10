@@ -1,0 +1,36 @@
+.navbar {
+  background-image: linear-gradient(to right, #b48e73, #de6209);
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar li {
+  margin: 0 1em;
+}
+
+.navbar a, .navbar button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar a:hover, .navbar button:hover {
+  text-decoration: underline;
+}
